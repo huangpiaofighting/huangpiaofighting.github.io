@@ -10,22 +10,14 @@ module.exports = {
 	devtool: 'eval-source-map', //配置生成Source Maps，选择合适的选项   source-map eval-source-map
 	module: {
 		rules: [
-		{
-			test: /\.(css)$/,
-			exclude: /^node_modules$/, //加载css
-			use: ExtractTextPlugin.extract({
-				use: [{
-					loader: 'css-loader',
-					options: {
-						modules: true,//css modules 
-						importLoaders: 1,
-						localIdentName: '[path][local]_[hash:base64:5]',
-						sourceMap: true
-					},
-				}],
-				fallback: 'style-loader'
-			})
-		},{
+        {
+            test: /\.css$/,
+            exclude: /^node_modules$/, //加载css
+            use: ExtractTextPlugin.extract({
+                fallback: "style-loader",
+                use: "css-loader"
+            })
+        },{
             test: /\.(js|jsx)$/,
             exclude: /^node_modules$/,
 			loader: "babel-loader",
@@ -45,11 +37,11 @@ module.exports = {
 		}]
 	},
 	plugins: [
-		// new CleanWebpackPlugin(["dist"]),
+		new CleanWebpackPlugin(["dist"]),
 		new ExtractTextPlugin("styles.css"),
 		new HtmlWebpackPlugin({
 			filename: "root.html",
-			template: "./root.html",
+			template: "./src/root.html",
 			inject: true
 		})
 	],
