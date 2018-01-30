@@ -48,8 +48,8 @@ module.exports = {
 		// new CleanWebpackPlugin(["dist"]),
 		new ExtractTextPlugin("styles.css"),
 		new HtmlWebpackPlugin({
-			filename: "hello.html",
-			template: "./index.html",
+			filename: "root.html",
+			template: "./root.html",
 			inject: true
 		})
 	],
