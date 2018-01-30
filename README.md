@@ -1,6 +1,7 @@
 [hqw个人博客](https://huangpiaofighting.github.io/)
 
-
+## GIT使用
+git rm -r --cached filename
 
 
 ### 疑问
