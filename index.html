@@ -1,4 +1,81 @@
-<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="./umi.css"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HQW</title><script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/templates/pace-theme-material.tmpl.css"><script>window.routerBase = "./";</script></head><body><script>Pace.on('done',function(){
-            console.log("Pace--done")
-            document.getElementById("root").style.display = 'block'
-        })</script><div style="display: none;" id="root"></div><script src="./umi.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HQW</title>
+    <!-- <link rel="stylesheet/less" href="/color.less"> -->
+
+    <!-- <script async src="https://gw.alipayobjects.com/os/lib/less.js/3.8.1/less.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/templates/pace-theme-material.tmpl.css">  -->
+    <link rel="stylesheet" href="./umi.css" />
+    <script>
+      window.routerBase = "./";
+    </script>
+    <script>
+      //! umi version: 3.4.14
+    </script>
+    <script>
+      window.umi_plugin_ant_themeVar = [
+        {
+          fileName: "pink.css",
+          key: "pink",
+          modifyVars: { "@theme-color": "#f4cfcf", "@font-color": "#fff" },
+        },
+        {
+          fileName: "volcano.css",
+          key: "volcano",
+          modifyVars: { "@theme-color": "#FA541C", "@font-color": "#000" },
+        },
+        {
+          fileName: "sunset.css",
+          key: "sunset",
+          modifyVars: { "@theme-color": "#FAAD14", "@font-color": "#fff" },
+        },
+        {
+          fileName: "cyan.css",
+          key: "cyan",
+          modifyVars: { "@theme-color": "#13C2C2", "@font-color": "#fff" },
+        },
+        {
+          fileName: "green.css",
+          key: "green",
+          modifyVars: { "@theme-color": "#52C41A", "@font-color": "#000" },
+        },
+        {
+          fileName: "daybreak.css",
+          key: "daybreak",
+          modifyVars: { "@theme-color": "#1890FF" },
+        },
+        {
+          fileName: "geekblue.css",
+          key: "geekblue",
+          modifyVars: { "@theme-color": "#2F54EB" },
+        },
+        {
+          fileName: "purple.css",
+          key: "purple",
+          modifyVars: { "@theme-color": "#722ED1" },
+        },
+      ];
+    </script>
+  </head>
+  <body>
+    <script>
+      window.less = {
+        async: true,
+        env: "production",
+        javascriptEnabled: true,
+      };
+      // Pace.on('done',function(){
+      //     console.log("Pace--done")
+      //     document.getElementById("root").style.display = 'block'
+      // })
+    </script>
+    <div style="display: block" id="root"></div>
+
+    <script src="./umi.js"></script>
+  </body>
+</html>
