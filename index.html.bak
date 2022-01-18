@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HQW FAST</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <script>
+      window.routerBase = "/";
+    </script>
+  </head>
+  <body>
+    <div style="display: block" id="root"></div>
+    <a href="/web.html">博客程序</a>
+    <a href="/_book/index.html">博客书籍</a>
+  </body>
+</html>
