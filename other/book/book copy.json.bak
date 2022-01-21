@@ -1,0 +1,41 @@
+{
+    "root": "/",
+    "author": "hqw",
+    "title": "hqw图书",
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
+    "plugins": [
+        "-sharing",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "hide-element",
+        "back-to-top-button",
+        "tbfed-pagefooter",
+        "expandable-chapters-small",
+        "copy-code-button"
+    ],
+    "pluginsConfig": {
+        "fontSettings": {
+            "theme": "Sepia",
+            "family": "sans",
+            "size": 2
+        },
+        "hide-element": {
+            "elements": [
+                ".gitbook-link",
+                ".divider"
+            ]
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright © 2021-2022 huangpiaofighting.",
+            "modify_label": "文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    }
+}

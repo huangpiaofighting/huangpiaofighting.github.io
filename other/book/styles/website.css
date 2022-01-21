@@ -1,0 +1,63 @@
+:root {
+  --text-color: #141414;
+  --text-link-color: #ffc069;
+  --text-link-light-color: #ffe7ba;
+  --text-light-color: #595959;
+  --page-background: #f3eacb;
+  --arraw-color: #141414;
+  --blockquote-color: #141414;
+  --code-section: #9dbed8;
+  /* --code-background-section: #2d3143; */
+  --code-background-section: #fdf6e3;
+}
+h1 {
+  color: var(--text-color);
+}
+.book-summary {
+  color: var(--text-color);
+  background: var(--page-background);
+}
+.book-body {
+  color: var(--text-color);
+  background: var(--page-background);
+}
+.markdown-section {
+  color: var(--text-color);
+}
+.book-summary ul.summary li a,
+.book-summary ul.summary li span {
+  color: var(--text-color);
+}
+a {
+  color: var(--text-link-color);
+}
+a:hover {
+  color: var(--text-link-dark-color);
+}
+.navigation {
+  color: var(--arraw-color);
+}
+.markdown-section a {
+  color: var(--text-link-color);
+}
+.book-summary ul.summary li a:hover {
+  text-decoration: auto;
+  color: var(--text-light-color);
+}
+.markdown-section blockquote {
+  border-left-color: var(--blockquote-color);
+}
+.markdown-section pre {
+  background-color: var(--code-background-section);
+  color: var(--code-section);
+  border-color: var(--code-background-section);
+}
+.book-body .page-wrapper .page-inner section.normal code {
+  background-color: var(--code-background-section);
+  /* color: var(--code-section); */
+  border-color: var(--code-background-section);
+  margin: 0 5px;
+}
+.book-summary ul.summary li.active > a {
+  color: var(--text-color);
+}
